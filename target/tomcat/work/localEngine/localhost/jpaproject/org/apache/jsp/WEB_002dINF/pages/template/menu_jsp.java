@@ -57,36 +57,38 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\r\n");
-      out.write("<div data-ng-controller=\"homeController\">\r\n");
-      out.write("<nav class=\"navbar navbar-inverse \">\r\n");
-      out.write("  <div class=\"container-fluid\">\r\n");
-      out.write("    <div class=\"navbar-header\">\r\n");
-      out.write("      <a class=\"navbar-brand\">Academy</a>\r\n");
-      out.write("    </div>\r\n");
-      out.write("    <ul class=\"nav navbar-nav\">\r\n");
+      out.write("\n");
+      out.write("<div data-ng-controller=\"homeController\">\n");
+      out.write("<nav class=\"navbar navbar-inverse \">\n");
+      out.write("  <div class=\"container-fluid\">\n");
+      out.write("    <div class=\"navbar-header\">\n");
+      out.write("      <a class=\"navbar-brand\">Academy</a>\n");
+      out.write("    </div>\n");
+      out.write("    <ul class=\"nav navbar-nav\">\n");
       out.write("      <li class=\"active\"><a href=\"");
       if (_jspx_meth_c_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\" >Home</a></li>\r\n");
-      out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">List<span class=\"caret\"></span></a>\r\n");
-      out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a data-ng-click=\"user()\">Cart</a></li>\r\n");
-      out.write("          <li><a  href=\"");
+      out.write("\" >Home</a></li>\n");
+      out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">List<span class=\"caret\"></span></a>\n");
+      out.write("        <ul class=\"dropdown-menu\">\n");
+      out.write("          <li><a href=\"");
       if (_jspx_meth_c_005furl_005f1(_jspx_page_context))
         return;
-      out.write("\">User</a></li>\r\n");
-      out.write("        </ul>\r\n");
-      out.write("      </li>\r\n");
-      out.write("    </ul>\r\n");
-      out.write("  </div>\r\n");
-      out.write("</nav>\r\n");
-      out.write("</div>\r\n");
-      out.write("  ");
+      out.write("\">Cart</a></li>\n");
+      out.write("          <li><a  href=\"");
+      if (_jspx_meth_c_005furl_005f2(_jspx_page_context))
+        return;
+      out.write("\">User</a></li>\n");
+      out.write("        </ul>\n");
+      out.write("      </li>\n");
+      out.write("    </ul>\n");
+      out.write("  </div>\n");
+      out.write("</nav>\n");
+      out.write("</div>\n");
+      out.write("  \n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -147,14 +149,33 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f1 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f1.setParent(null);
-    // /WEB-INF/pages/template/menu.jsp(14,24) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005furl_005f1.setValue("/User/List");
+    // /WEB-INF/pages/template/menu.jsp(13,23) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005furl_005f1.setValue("/Cart/List");
     int _jspx_eval_c_005furl_005f1 = _jspx_th_c_005furl_005f1.doStartTag();
     if (_jspx_th_c_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
       return true;
     }
     _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005furl_005f2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:url
+    org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f2 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
+    _jspx_th_c_005furl_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_c_005furl_005f2.setParent(null);
+    // /WEB-INF/pages/template/menu.jsp(14,24) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005furl_005f2.setValue("/User/List");
+    int _jspx_eval_c_005furl_005f2 = _jspx_th_c_005furl_005f2.doStartTag();
+    if (_jspx_th_c_005furl_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f2);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f2);
     return false;
   }
 }

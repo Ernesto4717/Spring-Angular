@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    
+  
+	<definition name="DefaultTemplate" 
+	      template="/WEB-INF/pages/template/home.jsp">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/pages/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+		
+		<put-list-attribute name="javascript">
+	        <add-attribute value="/resources/styles/js/jquery-3.1.1.min.js" />
+			<add-attribute value="/resources/styles/js/bootstrap/js/bootstrap.min.js"/>
+			<add-attribute value="/resources/styles/js/angular.min.js"/>
+			<add-attribute value="/js/angular/main.js"/>
+			<add-attribute value="/js/angular/homeController.js"/>
+    	</put-list-attribute>
+    	 
+  		<put-list-attribute name="stylesheets">
+	        <add-attribute value="/resources/styles/js/bootstrap/css/bootstrap.min.css" />
+	        <add-attribute value="/resources/styles/css/header-bootstrap.css"/>
+	        <add-attribute value="/resources/styles/css/general.css"/>
+	        <add-attribute value="/resources/styles/css/footer.css"/>
+    	</put-list-attribute>
+	</definition>
+
+</tiles-definitions>
