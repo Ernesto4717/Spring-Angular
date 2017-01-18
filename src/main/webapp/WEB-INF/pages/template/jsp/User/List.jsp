@@ -19,7 +19,7 @@
 		</thead>
 		
 			<tr data-ng-repeat="user in userList">
-				<td><a href="<c:url value="/User/edit?username=${user.username}&status="/>">${user.username}</a></td>
+				<td><a data-ng-href="/User/edit?username={{user.username}}&status=">{{user.username}}</a></td>
 				<td data-ng-bind="user.name"></td>
 				<td data-ng-bind="user.role.description"></td>
 				<td data-ng-bind="user.status"></td>
