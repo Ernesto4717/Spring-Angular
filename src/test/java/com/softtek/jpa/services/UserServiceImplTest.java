@@ -1,13 +1,16 @@
 package com.softtek.jpa.services;
 
-import static org.junit.Assert.*;
-
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.softtek.jpa.domain.User;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations="classpath:spring/application-context.xml")
 public class UserServiceImplTest {
 
 	@Autowired
@@ -25,7 +28,8 @@ public class UserServiceImplTest {
 	
 	@Test
 	public void updateTest(){
-		boolean state= userService.update(new User(), "Adimnistrator");
+		User user= new User("ernes", "mmurillo", "Ernesto", "admin", "active", "description");
+		boolean state= userService.update(user, "Admin");
 		Assert.assertTrue(state);
 	}
 
