@@ -18,7 +18,7 @@ CREATE TABLE cart (
   ship_to_id int(11),
   status_id int(11) ,
   create_user varchar(20) ,
-  create_date varchar(20) ,
+  create_date varchar(30) ,
   update_user varchar(20) ,
-  update_date varchar(20) 
+  update_date varchar(30) 
 );

@@ -27,7 +27,7 @@ public class CartServiceImplIT {
 	CartService cartService;
 	
 	@Test
-	@DatabaseSetup(value="/dataset/scenario1.xml",  type=DatabaseOperation.INSERT)
+	@DatabaseSetup(value="/dataset/cartDefault.xml",  type=DatabaseOperation.INSERT)
 	public void shouldTrueWhenCartListIsCorrect(){
 		int registerNum= cartService.cartList().size();
 		System.out.println(cartService.cartList());

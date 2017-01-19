@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+
+
+  <status status_id="1100" description="Created" status_type="CART"/>
+  <status status_id="1200" description="Ordered" status_type="CART"/>
+  <status status_id="1300" description="Delivered" status_type="CART"/>
+  <status status_id="1400" description="Canceled" status_type="CART"/>
+  <status status_id="2100" description="Created" status_type="ORDER"/>
+  <status status_id="2300" description="Delivered" status_type="ORDER"/>
+  <status status_id="2350" description="Partially Delivered" status_type="ORDER"/>
+  <status status_id="2400" description="Canceled" status_type="ORDER"/>
+
+
+  <ship_to ship_to_id="2" name="Jorge Gonzalez" address="Col. Obrera" />
+
+  <cart cart_id="1" lines_amount="2309.99" shipping_amount="60.00" cart_amount="2369.99" ship_to_id="2" status_id="1300" create_user="jorge.gonzalez" create_date="2014-07-24 13:00:00.0" update_user="jorge.gonzalez" update_date="2014-07-24 13:00:00.0"/>
+<cart cart_id="32" lines_amount="5460.00" shipping_amount="0.00" cart_amount="5460.00" ship_to_id="3" status_id="1100" create_user="jorge.gonzalez" create_date="2015-07-30 21:04:25.0" update_user="jorge.gonzalez" update_date="2015-07-30 21:04:25.0"/>
+</dataset>
