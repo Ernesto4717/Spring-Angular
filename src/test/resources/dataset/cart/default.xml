@@ -1,5 +1,22 @@
+
 <dataset>
-	<CART cart_id="1" lines_amount="2300" shipping_amount="50"
-		cart_amount="2340" ship_to_id="1" status_id="1300" create_user="jorge.gonzalez" create_date="24"
-		update_user="jorge.gonzalez" update_date="123" />
+
+
+	<status status_id="1100" description="Created" status_type="CART" />
+	<status status_id="1200" description="Ordered" status_type="CART" />
+	<status status_id="1300" description="Delivered" status_type="CART" />
+	<status status_id="1400" description="Canceled" status_type="CART" />
+
+	<ship_to ship_to_id="2" name="Jorge Gonzalez" address="Col. Obrera" />
+
+	<cart cart_id="1" lines_amount="2309.99" shipping_amount="60.00"
+		cart_amount="2369.99" ship_to_id="2" status_id="1300" create_user="jorge.gonzalez"
+		create_date="2014-07-24 13:00:00.0" update_user="jorge.gonzalez"
+		update_date="2014-07-24 13:00:00.0" />
+
+	<cart cart_id="2" lines_amount="3902.99" shipping_amount="40.00"
+		cart_amount="2369.99" ship_to_id="2" status_id="1300" create_user="jorge.gonzalez"
+		create_date="2014-07-24 13:00:00.0" update_user="jorge.gonzalez"
+		update_date="2014-07-24 13:00:00.0" />
+
 </dataset>
