@@ -19,8 +19,6 @@ public class UserServiceImplTest {
 	
 	@Test
 	public void listUserTest() {
-		
-		
 		System.out.println(userService.userList());
 		System.out.println(userService.userList().size());
 		Assert.assertNotNull(userService.userList());
