@@ -7,6 +7,12 @@
   <li><a href="<c:url value="/User/home"/>">Home</a></li>
   <li class="active">User List</li>
 </ol>
+
+<div class="form-group">
+	<input type="text" data-ng-model="name">
+	<button data-ng-click="search()">search</button>
+</div>
+
 	<table class="table">
 	 <thead class="thead-inverse">
 		<tr>

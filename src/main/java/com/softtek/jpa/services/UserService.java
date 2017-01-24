@@ -8,6 +8,7 @@ public interface UserService {
 	
 	public List<User> userList();
 	public User user(String username);
+	public List<User> getUserByName(String name);
 	public boolean update(User user,String user_role_id);
 
 }
