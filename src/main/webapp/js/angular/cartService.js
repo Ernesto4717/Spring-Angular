@@ -1,4 +1,4 @@
-myApp.controller("cartController",function cartController($scope,cartService){
+myApp.controller("cartController",function cartController($scope,cartService,$http){
 	
 	$scope.cartList = [];
 	$http({

@@ -57,72 +57,73 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
       if (_jspx_meth_tiles_005fimportAttribute_005f0(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_tiles_005fimportAttribute_005f1(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html lang=\"en\">\n");
-      out.write("<head>\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write(" <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1\">\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html lang=\"en\">\r\n");
+      out.write("<head>\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write(" <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1\">\r\n");
       out.write("\t<title>");
       if (_jspx_meth_tiles_005finsertAttribute_005f0(_jspx_page_context))
         return;
-      out.write("</title>\n");
-      out.write(" <!-- stylesheets -->\n");
+      out.write("</title>\r\n");
+      out.write(" <!-- stylesheets -->\r\n");
       out.write("   \t\t   <link rel=\"icon\" type=\"image/png\"  href=\"");
       if (_jspx_meth_c_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\" />\n");
+      out.write("\" />\r\n");
       out.write("\t\t\t");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n");
+      out.write("\r\n");
       out.write("\t\t\t");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t\t    \n");
+      out.write("\r\n");
+      out.write("\t\t    \r\n");
       out.write("\t\t    <script type=\"text/javascript\" src=\"");
       if (_jspx_meth_c_005furl_005f3(_jspx_page_context))
         return;
-      out.write("\"></script>\n");
-      out.write("    <!-- end stylesheets -->\n");
-      out.write("</head>\n");
-      out.write("<body data-ng-app=\"springApp\" >\n");
-      out.write("\t<div>\n");
+      out.write("\"></script>\r\n");
+      out.write("    <!-- end stylesheets -->\r\n");
+      out.write("</head>\r\n");
+      out.write("<body data-ng-app=\"springApp\" >\r\n");
+      out.write("\t<div>\r\n");
       out.write("\t\t");
       if (_jspx_meth_tiles_005finsertAttribute_005f1(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t</div>\n");
-      out.write("\t<div>\n");
+      out.write("\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\t<div>\r\n");
       out.write("\t\t");
       if (_jspx_meth_tiles_005finsertAttribute_005f2(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t</div>\n");
-      out.write("\t<div>\n");
-      out.write("\t\t<div class=\"space\">\n");
+      out.write("\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\t<div>\r\n");
+      out.write("\t\t<div class=\"space\">\r\n");
       out.write("\t\t\t");
       if (_jspx_meth_tiles_005finsertAttribute_005f3(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t\t</div>\n");
-      out.write("\t</div>\n");
-      out.write("\t<br></br>\n");
-      out.write("\t<div>\n");
+      out.write("\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t</div>\r\n");
+      out.write("\t<br></br>\r\n");
+      out.write("\t<div>\r\n");
       out.write("\t\t");
       if (_jspx_meth_tiles_005finsertAttribute_005f4(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\t</div>\n");
-      out.write("</body>\n");
+      out.write("\r\n");
+      out.write("\t</div>\r\n");
+      out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -217,11 +218,11 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("        \t\t<script type=\"text/javascript\" src=\"");
           if (_jspx_meth_c_005furl_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\"></script>\n");
+          out.write("\"></script>\r\n");
           out.write("    \t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -278,11 +279,11 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
       if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("        \t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
           if (_jspx_meth_c_005furl_005f2(_jspx_th_c_005fforEach_005f1, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
             return true;
-          out.write("\">\n");
+          out.write("\">\r\n");
           out.write("    \t\t");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

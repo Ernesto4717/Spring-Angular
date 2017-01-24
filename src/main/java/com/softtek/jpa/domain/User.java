@@ -42,6 +42,20 @@ import javax.persistence.Table;
 				+ " JOIN user_role ur ON ur.user_role_id = u.user_role_id"
 				+ " WHERE u.username = :username",
 				resultSetMapping = "UserMapping"),
+	
+	@NamedNativeQuery(
+			name="findUserByName",
+				query="SELECT u.username as username, "
+						+ "u.password as password,"
+						+ "u.name as name, "
+						+ "u.user_role_id as userRoleId, "
+						+ "u.active as active, " 
+						+ "ur.description as description "
+						+ " FROM user u "
+				+ " JOIN user_role ur ON ur.user_role_id = u.user_role_id"
+				+ " WHERE u.name = :name",
+				resultSetMapping = "UserMapping"),
+	
 	@NamedNativeQuery(
 			name="update",
 				query="UPDATE user u , "

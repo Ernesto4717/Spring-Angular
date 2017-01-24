@@ -54,11 +54,12 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<div class=\"footer\">Softtek Academy</strong>.</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

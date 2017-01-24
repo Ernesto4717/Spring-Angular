@@ -7,6 +7,12 @@
   <li><a href="<c:url value="/User/home"/>">Home</a></li>
   <li class="active">User List</li>
 </ol>
+
+<div class="form-group">
+	<input type="text" data-ng-model="name">
+	<button data-ng-click="search()">search</button>
+</div>
+
 	<table class="table">
 	 <thead class="thead-inverse">
 		<tr>
@@ -19,7 +25,7 @@
 		</thead>
 		
 			<tr data-ng-repeat="user in userList">
-				<td><a href="<c:url value="/User/edit?username=${user.username}&status="/>">${user.username}</a></td>
+				<td><a data-ng-href="/User/edit?username={{user.username}}&status=">{{user.username}}</a></td>
 				<td data-ng-bind="user.name"></td>
 				<td data-ng-bind="user.role.description"></td>
 				<td data-ng-bind="user.status"></td>

@@ -30,43 +30,47 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean update(User user, String user_role_id) {
 		// TODO Auto-generated method stub
-		
-		user.setRole(new UserRole(user_role_id,""));
-		if(isValidUser(user)){
+
+		user.setRole(new UserRole(user_role_id, ""));
+		if (isValidUser(user)) {
 			userRepository.save(user);
 			return true;
 		}
 		return false;
 	}
-	
 
+	@Override
+	public List<User> getUserByName(String name) {
+		// TODO Auto-generated method stub
+		return userRepository.findUsers(name);
+	}
 
 	private Boolean isValidUser(final User user) {
 
 		if (user.getName() == null || user.getName().isEmpty()) {
-		
+
 			return false;
 		}
 
-		if (user.getStatus()== null || user.getStatus().isEmpty()  ) {
-		
+		if (user.getStatus() == null || user.getStatus().isEmpty()) {
+
 			return false;
 		}
 
-		if(user.getUsername()==null){
-		
+		if (user.getUsername() == null) {
+
 			return false;
 		}
-		if(user.getRole()==null || user.getRole().getUser_roleid().isEmpty()){			System.out.println(4);
+		if (user.getRole() == null || user.getRole().getUser_roleid().isEmpty()) {
+			System.out.println(4);
 			return false;
 		}
 		System.out.println(user.getPassword());
-		if(user.getPassword()==null||user.getPassword().isEmpty()){
-		
+		if (user.getPassword() == null || user.getPassword().isEmpty()) {
+
 			return false;
 		}
 		return true;
 	}
-	
 
 }

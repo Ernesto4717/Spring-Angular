@@ -66,6 +66,12 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\">Home</a></li>\n");
       out.write("  <li class=\"active\">User List</li>\n");
       out.write("</ol>\n");
+      out.write("\n");
+      out.write("<div class=\"form-group\">\n");
+      out.write("\t<input type=\"text\" data-ng-model=\"name\">\n");
+      out.write("\t<button data-ng-click=\"search()\">search</button>\n");
+      out.write("</div>\n");
+      out.write("\n");
       out.write("\t<table class=\"table\">\n");
       out.write("\t <thead class=\"thead-inverse\">\n");
       out.write("\t\t<tr>\n");
@@ -78,13 +84,7 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</thead>\n");
       out.write("\t\t\n");
       out.write("\t\t\t<tr data-ng-repeat=\"user in userList\">\n");
-      out.write("\t\t\t\t<td><a href=\"");
-      if (_jspx_meth_c_005furl_005f1(_jspx_page_context))
-        return;
-      out.write('"');
-      out.write('>');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${user.username}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</a></td>\n");
+      out.write("\t\t\t\t<td><a data-ng-href=\"/User/edit?username={{user.username}}&status=\">{{user.username}}</a></td>\n");
       out.write("\t\t\t\t<td data-ng-bind=\"user.name\"></td>\n");
       out.write("\t\t\t\t<td data-ng-bind=\"user.role.description\"></td>\n");
       out.write("\t\t\t\t<td data-ng-bind=\"user.status\"></td>\n");
@@ -121,25 +121,6 @@ public final class List_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005furl_005f1(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:url
-    org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f1 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
-    _jspx_th_c_005furl_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_c_005furl_005f1.setParent(null);
-    // /WEB-INF/pages/template/jsp/User/List.jsp(22,17) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005furl_005f1.setValue((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/User/edit?username=${user.username}&status=", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    int _jspx_eval_c_005furl_005f1 = _jspx_th_c_005furl_005f1.doStartTag();
-    if (_jspx_th_c_005furl_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f1);
     return false;
   }
 }

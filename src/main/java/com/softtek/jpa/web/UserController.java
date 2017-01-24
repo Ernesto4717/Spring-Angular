@@ -62,6 +62,14 @@ public class UserController {
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
 	
+	@RequestMapping(value = "/ListData/{name}", method= RequestMethod.GET)
+    public ResponseEntity<List<User>> getUserByName(@RequestParam String name) 
+    {
+		System.out.println(name);
+		List<User> users=userService.getUserByName(name);
+        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    }
+	
 	@RequestMapping(value = "/edit")
 	public String editUser(@RequestParam String username, @RequestParam String status, Model model) {
 		User user = userService.user(username);

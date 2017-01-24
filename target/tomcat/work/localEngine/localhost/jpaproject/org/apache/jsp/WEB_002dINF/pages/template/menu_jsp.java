@@ -57,38 +57,39 @@ public final class menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("<div data-ng-controller=\"homeController\">\n");
-      out.write("<nav class=\"navbar navbar-inverse \">\n");
-      out.write("  <div class=\"container-fluid\">\n");
-      out.write("    <div class=\"navbar-header\">\n");
-      out.write("      <a class=\"navbar-brand\">Academy</a>\n");
-      out.write("    </div>\n");
-      out.write("    <ul class=\"nav navbar-nav\">\n");
+      out.write("\r\n");
+      out.write("<div data-ng-controller=\"homeController\">\r\n");
+      out.write("<nav class=\"navbar navbar-inverse \">\r\n");
+      out.write("  <div class=\"container-fluid\">\r\n");
+      out.write("    <div class=\"navbar-header\">\r\n");
+      out.write("      <a class=\"navbar-brand\">Academy</a>\r\n");
+      out.write("    </div>\r\n");
+      out.write("    <ul class=\"nav navbar-nav\">\r\n");
       out.write("      <li class=\"active\"><a href=\"");
       if (_jspx_meth_c_005furl_005f0(_jspx_page_context))
         return;
-      out.write("\" >Home</a></li>\n");
-      out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">List<span class=\"caret\"></span></a>\n");
-      out.write("        <ul class=\"dropdown-menu\">\n");
+      out.write("\" >Home</a></li>\r\n");
+      out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">List<span class=\"caret\"></span></a>\r\n");
+      out.write("        <ul class=\"dropdown-menu\">\r\n");
       out.write("          <li><a href=\"");
       if (_jspx_meth_c_005furl_005f1(_jspx_page_context))
         return;
-      out.write("\">Cart</a></li>\n");
+      out.write("\">Cart</a></li>\r\n");
       out.write("          <li><a  href=\"");
       if (_jspx_meth_c_005furl_005f2(_jspx_page_context))
         return;
-      out.write("\">User</a></li>\n");
-      out.write("        </ul>\n");
-      out.write("      </li>\n");
-      out.write("    </ul>\n");
-      out.write("  </div>\n");
-      out.write("</nav>\n");
-      out.write("</div>\n");
-      out.write("  \n");
+      out.write("\">User</a></li>\r\n");
+      out.write("        </ul>\r\n");
+      out.write("      </li>\r\n");
+      out.write("    </ul>\r\n");
+      out.write("  </div>\r\n");
+      out.write("</nav>\r\n");
+      out.write("</div>\r\n");
+      out.write("  \r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

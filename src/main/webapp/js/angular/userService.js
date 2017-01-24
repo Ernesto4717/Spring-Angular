@@ -8,8 +8,17 @@ myApp.controller("springController", function springController($scope,$http,
 		$scope.userList = response.data;
 		console.log(response.data);
 	});
-	$scope.user = function() {
-		console.log("function user");
+	
+	$scope.search = function() {
+		console.log({name: $scope.name});
+		$http({
+			method : "GET",
+			url : "/jpaproject/User/ListData/",
+			params : {name: $scope.name}
+		}).then(function success(response) {
+			$scope.userList = response.data;
+			console.log(response.data);
+		});
 		
 	};
 }).factory("userService", function() {
